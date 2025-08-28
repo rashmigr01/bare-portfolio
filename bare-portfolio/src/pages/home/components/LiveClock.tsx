@@ -17,4 +17,4 @@ const LiveClock = () => {
   );
 }
 
-export default LiveClock;
+export { LiveClock };
