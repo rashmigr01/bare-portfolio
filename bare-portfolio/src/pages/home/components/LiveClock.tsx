@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { TIMEZONE } from "../../../info";
 
 const LiveClock = () => {
   const [time, setTime] = useState(new Date());
@@ -12,7 +13,7 @@ const LiveClock = () => {
 
   return (
     <div>
-      {time.toLocaleTimeString("en-IN", { hour12: false })}
+      {time.toLocaleTimeString(TIMEZONE, { hour12: false })}
     </div>
   );
 }

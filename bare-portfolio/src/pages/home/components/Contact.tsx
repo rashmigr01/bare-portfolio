@@ -1,57 +1,58 @@
 import { Mail } from "lucide-react";
 import { Bluesky, Facebook, Github, Instagram, Linkedin, X } from "../../../icons";
 import { Link } from "react-router";
+import { EMAIL, GITHUB, LINKEDIN, X as X_INFO, BLUESKY, INSTAGRAM, FACEBOOK } from "../../../info";
 
 const Contact = () => {
   return (
     <div className="flex flex-col gap-4 text-sm">
       <div className="flex items-center justify-between gap-2">
         <Mail className="size-4" />
-        <Link to="mailto:name@email.com" className="relative group">
-          name@email.com
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full"/>
+        <Link to={`mailto:${EMAIL}`} className="relative group truncate">
+          {EMAIL}
+          <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-200 group-hover:w-full"/>
         </Link>
       </div>
       <div className="flex items-center justify-between gap-2">
         <Github className="size-4" />
-        <Link to="https://github.com/username" className="relative group">
-          username
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-200 group-hover:w-full"/>
+        <Link to={GITHUB} className="relative group truncate">
+          {GITHUB}
+          <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-200 group-hover:w-full"/>
         </Link>
       </div>
       <div className="flex items-center justify-between gap-2">
         <Linkedin className="size-4" />
-        <Link to="https://linkedin.com/in/username" className="relative group">
-          username
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-200 group-hover:w-full"/>
+        <Link to={LINKEDIN} className="relative group truncate">
+          {LINKEDIN}
+          <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-200 group-hover:w-full"/>
         </Link>
       </div>
       <div className="flex items-center justify-between gap-2">
         <X className="size-4" />
-        <Link to="https://x.com/username" className="relative group">
-          username
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-200 group-hover:w-full"/>
+        <Link to={X_INFO} className="relative group truncate">
+          {X_INFO}
+          <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-200 group-hover:w-full"/>
         </Link>
       </div>
       <div className="flex items-center justify-between gap-2">
         <Bluesky className="size-4" />
-        <Link to="https://bsky.app/profile/username" className="relative group">
-          username
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-200 group-hover:w-full"/>
+        <Link to={BLUESKY} className="relative group truncate">
+          {BLUESKY}
+          <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-200 group-hover:w-full"/>
         </Link>
       </div>
       <div className="flex items-center justify-between gap-2">
         <Instagram className="size-4" />
-        <Link to="https://instagram.com/username" className="relative group">
-          username
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-200 group-hover:w-full"/>
+        <Link to={INSTAGRAM} className="relative group truncate">
+          {INSTAGRAM}
+          <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-200 group-hover:w-full"/>
         </Link>
       </div>
       <div className="flex items-center justify-between gap-2">
         <Facebook className="size-4" />
-        <Link to="https://facebook.com/username" className="relative group">
-          username
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-200 group-hover:w-full"/>
+        <Link to={FACEBOOK} className="relative group truncate">
+          {FACEBOOK}
+          <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-200 group-hover:w-full"/>
         </Link>
       </div>
     </div>
