@@ -4,6 +4,14 @@ type Project = {
   description?: string;
   github?: string;
   website?: string;
+  tags?: string[];
 };
 
-export type { Project };
+type BlogPost = {
+  id: number;
+  title: string;
+  tags?: string[];
+  filePath: string;
+};
+
+export type { Project, BlogPost };
