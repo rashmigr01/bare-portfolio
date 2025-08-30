@@ -21,13 +21,13 @@ const Projects = () => {
         <h1 className="text-2xl">Projects</h1>
       </header>
 
-      <main className="flex-1">
+      <main className="my-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {PROJECTS.map(Project)}
         </div>
       </main>
 
-      <footer className="text-xs text-right">
+      <footer className="text-xs text-right mt-4">
         <LiveClock />
         <p>
           {CITY}, {COUNTRY}

@@ -149,7 +149,7 @@ const BlogPost = () => {
         {renderBody()}
       </main>
 
-      <footer className="text-xs text-right">
+      <footer className="text-xs text-right mt-4">
         <LiveClock />
         <p>
           {CITY}, {COUNTRY}

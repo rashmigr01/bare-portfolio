@@ -12,7 +12,7 @@ const Home = () => {
         <h4 className="text-sm text-gray-600 mt-2">{DESCRIPTION}</h4>
       </header>
 
-      <main className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-28">
+      <main className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-28 my-auto">
         <section className="flex flex-col gap-4">
           <h2 className="flex items-center justify-between gap-2 text-lg">
             <PhoneIncoming className="size-4" />
@@ -41,7 +41,7 @@ const Home = () => {
         </section>
       </main>
 
-      <footer className="text-xs text-right">
+      <footer className="text-xs text-right mt-4">
         <LiveClock />
         <p>
           {CITY}, {COUNTRY}
