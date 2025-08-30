@@ -1,6 +1,6 @@
 import { ArrowUpLeft } from "lucide-react";
 import { useNavigate } from "react-router";
-import { CITY, COUNTRY, PROJECTS } from "../../config/info";
+import { CITY, COUNTRY, PROJECTS } from "../../../config/info";
 import { LiveClock, Project } from "../../components";
 
 const Projects = () => {

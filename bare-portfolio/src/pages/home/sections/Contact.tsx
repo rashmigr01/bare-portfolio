@@ -16,7 +16,7 @@ import {
   BLUESKY,
   INSTAGRAM,
   FACEBOOK,
-} from "../../../config/info";
+} from "../../../../config/info";
 
 const Contact = () => {
   return (

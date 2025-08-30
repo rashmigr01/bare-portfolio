@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { TIMEZONE } from "../config/info";
+import { TIMEZONE } from "../../config/info";
 
 const LiveClock = () => {
   const [time, setTime] = useState(new Date());

@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router";
-import { BLOG_POSTS } from "../../../config/info";
+import { BLOG_POSTS } from "../../../../config/info";
 import { BlogPost } from "../../../components";
 
 const Blog = () => {

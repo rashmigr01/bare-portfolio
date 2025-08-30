@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router";
 import { ArrowUpLeft } from "lucide-react";
 import { useState, useEffect } from "react";
-import { BLOG_POSTS, CITY, COUNTRY } from "../../config/info";
+import { BLOG_POSTS, CITY, COUNTRY } from "../../../config/info";
 import { LiveClock, CopyButton } from "../../components";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -19,7 +19,7 @@ const BlogPost = () => {
 
   useEffect(() => {
     if (blogPost) {
-      const filePath = `/src/config/blogPosts/${blogPost.filePath}`;
+      const filePath = `/config/blogPosts/${blogPost.filePath}`;
 
       fetch(filePath)
         .then(response => {

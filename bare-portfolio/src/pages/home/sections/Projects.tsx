@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router";
-import { PROJECTS } from "../../../config/info";
+import { PROJECTS } from "../../../../config/info";
 import { Project } from "../../../components";
 
 const Projects = () => {

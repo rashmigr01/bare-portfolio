@@ -1,4 +1,4 @@
-import type { BlogPost, Project } from "../types";
+import type { BlogPost, Project } from "../src/types";
 
 /****** Header Info ******/
 const NAME = "Name";

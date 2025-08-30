@@ -1,6 +1,6 @@
 import { ArrowUpLeft } from "lucide-react";
 import { useNavigate } from "react-router";
-import { BLOG_POSTS, CITY, COUNTRY } from "../../config/info";
+import { BLOG_POSTS, CITY, COUNTRY } from "../../../config/info";
 import { BlogPost, LiveClock } from "../../components";
 
 const Blog = () => {

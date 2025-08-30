@@ -1,7 +1,7 @@
 import { PhoneIncoming, Hammer, Brain } from "lucide-react";
 
 import { Contact, Projects, Blog } from "./sections";
-import { NAME, DESCRIPTION, CITY, COUNTRY } from "../../config/info";
+import { NAME, DESCRIPTION, CITY, COUNTRY } from "../../../config/info";
 import { LiveClock } from "../../components";
 
 const Home = () => {
