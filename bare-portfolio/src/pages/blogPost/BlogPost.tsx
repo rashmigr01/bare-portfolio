@@ -19,7 +19,7 @@ const BlogPost = () => {
 
   useEffect(() => {
     if (blogPost) {
-      const filePath = `/config/blogPosts/${blogPost.filePath}`;
+      const filePath = `/blogPosts/${blogPost.filePath}`;
 
       fetch(filePath)
         .then(response => {
