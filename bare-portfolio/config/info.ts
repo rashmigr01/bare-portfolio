@@ -35,7 +35,7 @@ const PROJECTS: Project[] = [
 const BLOG_POSTS: BlogPost[] = [
   {
     id: 1,
-    title: "init: add setup",
+    title: "init: ramblings",
     tags: ["Thoughts"],
     filePath: "1.md",
   },
